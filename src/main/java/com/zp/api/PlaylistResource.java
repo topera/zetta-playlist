@@ -1,5 +1,7 @@
 package com.zp.api;
 
+import com.zp.util.I18n;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
@@ -17,6 +19,7 @@ public class PlaylistResource {
     @GET
     public Response list() {
         String output = "[]";
+        output = I18n.getMessage("error.not.implemented");
         return Response.status(200).entity(output).build();
     }
 
