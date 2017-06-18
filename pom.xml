@@ -25,7 +25,21 @@
             <version>1.19.4</version>
         </dependency>
 
-        <!-- Used as replacement of junit  -->
+        <!-- Used to have a Rest client (jackson) -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+
+        <!-- Used to serialize/unserialize class from/to JSON -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+
+        <!-- Used as improvement of junit  -->
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>

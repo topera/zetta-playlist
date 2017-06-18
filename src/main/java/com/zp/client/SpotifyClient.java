@@ -2,6 +2,7 @@ package com.zp.client;
 
 import com.zp.exceptions.ZPNotSupportedException;
 import com.zp.model.Playlist;
+import com.zp.model.Playlists;
 import com.zp.model.Track;
 
 import java.util.List;
@@ -10,10 +11,10 @@ import java.util.List;
  * Client to access Spotify API (not implemented)
  * Created by rafael on 18/06/17.
  */
-public class SpotifyClient implements MusicClient {
+public class SpotifyClient extends MusicClient {
 
     @Override
-    public List<Playlist> getPlaylists() {
+    public Playlists getPlaylists() {
         throw new ZPNotSupportedException();
     }
 

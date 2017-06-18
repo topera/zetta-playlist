@@ -8,7 +8,7 @@ import com.zp.exceptions.ZPNotSupportedException;
  */
 public abstract class MusicClientFactory {
 
-    public static MusicClient create(MusicClient.Type type){
+    public static MusicClient create(MusicClientType type){
         switch (type) {
             case DEEZER: return new DeezerClient();
             case SPOTIFY: return new SpotifyClient();

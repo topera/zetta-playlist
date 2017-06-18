@@ -1,9 +1,9 @@
 package com.zp.specs
 
-import com.zp.client.MusicClient
+import com.zp.client.DeezerClient
 import com.zp.client.MusicClientFactory
-import com.zp.client.SpotifyClient
-import com.zp.exceptions.ZPNotSupportedException
+import com.zp.client.MusicClientType
+import com.zp.exceptions.ZPRequestError
 import spock.lang.Specification
 
 /**
@@ -11,18 +11,13 @@ import spock.lang.Specification
  */
 class MusicClientSpec extends Specification {
 
-    def "get invalid music client"() {
-        when: "get invalid client"
-        def client = MusicClientFactory.create(MusicClient.Type.SPOTIFY)
+    def "send request to wrong url returns error"() {
+        when: "send request to wrong place"
+        def client = MusicClientFactory.create(MusicClientType.DEEZER) as DeezerClient
+        client.sendRequest("https://www.deezer.com/wrong-url", Object)
 
-        then: "the class is correct"
-        client.class == SpotifyClient
-
-        when: "try to do a operation"
-        client.getPlaylists()
-
-        then: "we get an error"
-        thrown ZPNotSupportedException
+        then: "we get error"
+        thrown ZPRequestError
     }
 
 }
