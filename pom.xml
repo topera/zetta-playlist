@@ -9,6 +9,8 @@
     <packaging>war</packaging>
 
     <dependencies>
+
+        <!-- Used initially to allow usage of EJB3 -->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -16,17 +18,33 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Used to import reference implementation of JAX-RS -->
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-servlet</artifactId>
             <version>1.19.4</version>
         </dependency>
 
+        <!-- Used as replacement of junit  -->
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>1.1-groovy-2.4</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/groovy</directory>
+            </testResource>
+        </testResources>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
+
+            <!-- used to increase default version of 'maven-war-plugin' -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -35,6 +53,8 @@
                     <warSourceDirectory>web</warSourceDirectory>
                 </configuration>
             </plugin>
+
+            <!-- used to force java version to 1.8 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -44,6 +64,35 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!-- plugins used to allow the usage of Spock test Framework -->
+            <plugin>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>addTestSources</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- plugin used to specify that *Spec files are tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
+                <configuration>
+                    <includes>
+                        <include>src/test/groovy/**/*Spec.groovy</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+
         </plugins>
     </build>
 
