@@ -9,7 +9,7 @@ import java.util.List;
  * Generic client to access several Streaming Music APIs
  * Created by rafael on 18/06/17.
  */
-interface MusicClient {
+public interface MusicClient {
 
     /**
      * Possible types of music clients

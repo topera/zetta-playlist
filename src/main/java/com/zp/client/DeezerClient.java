@@ -9,7 +9,7 @@ import java.util.List;
  * Client to access Deezer API
  * Created by rafael on 18/06/17.
  */
-class DeezerClient implements MusicClient {
+public class DeezerClient implements MusicClient {
 
     @Override
     public List<Playlist> getPlaylists() {
