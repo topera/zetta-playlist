@@ -16,4 +16,8 @@ public abstract class MusicClientFactory {
         throw new ZPNotSupportedException();
     }
 
+    public static MusicClient create(String musicClientType) {
+        return create(MusicClientType.valueOf(musicClientType.toUpperCase()));
+    }
+
 }

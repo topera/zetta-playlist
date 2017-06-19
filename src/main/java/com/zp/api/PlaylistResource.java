@@ -1,26 +1,31 @@
 package com.zp.api;
 
-import com.zp.util.I18n;
+import com.zp.client.MusicClient;
+import com.zp.client.MusicClientFactory;
+import com.zp.model.Playlists;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * Created by rafael on 18/06/17.
  */
+@Produces({MediaType.APPLICATION_JSON})
 @Path("playlist")
 public class PlaylistResource {
 
     /**
-     * List all playlists of the logged user
-     * @return
+     * List all playlists
+     * @return playlists
      */
     @GET
-    public Response list() {
-        String output = "[]";
-        output = I18n.getMessage("error.not.implemented");
-        return Response.status(200).entity(output).build();
+    @Path("/{musicClientType}")
+    public Playlists list(@PathParam("musicClientType") String musicClientType) {
+        MusicClient musicClient = MusicClientFactory.create(musicClientType);
+        return musicClient.getPlaylists();
     }
 
 }
