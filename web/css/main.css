@@ -2,13 +2,38 @@ body {
     padding: 25px 20px;
 }
 
-header {
-    font-size: 20px;
-    margin-bottom: 20px;
+#header {
+    width: 100%;
+    height: 143px;
 }
 
-footer {
-    bottom: 0;
-    position: fixed;
-    margin-bottom: 20px;
+#header .left {
+    float: left;
+    width: 200px;
+    height: 100%;
 }
+#header .right {
+    float: left;
+    width: 200px;
+    padding-top: 67px;
+    padding-left: 25px;
+}
+
+#header .right em {
+}
+
+#deezer-logo {
+    background: url("../images/deezer-black.png") no-repeat;
+    background-size: contain;
+    height: 57px;
+    width: auto;
+}
+
+#zetta-logo {
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
