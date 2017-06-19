@@ -13,7 +13,7 @@
     <ul>
     {{each(i, playlist) data}}
       <li>
-         \${i+1}. {{html playlist.title}}
+         \${i+1} {{html playlist.title}}
       </li>
     {{/each}}
     </ul>
