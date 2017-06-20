@@ -1,11 +1,8 @@
 package com.zp.client;
 
 import com.zp.exceptions.ZPNotSupportedException;
-import com.zp.model.deezer.PlaylistDeezer;
+import com.zp.model.zp.Playlist;
 import com.zp.model.zp.Playlists;
-import com.zp.model.zp.Track;
-
-import java.util.List;
 
 /**
  * Client to access Spotify API (not implemented)
@@ -19,7 +16,7 @@ public class SpotifyClient extends MusicClient {
     }
 
     @Override
-    public List<Track> getTracksFromPlaylist(PlaylistDeezer playlist) {
+    public Playlist getPlaylist(Long id) {
         throw new ZPNotSupportedException();
     }
 

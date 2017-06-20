@@ -11,15 +11,22 @@
     <link href="css/main.css" rel="stylesheet" />
 
     <script id="playlists-template" type="text/x-jquery-tmpl">
-    <ul>
-    {{each(i, playlist) data}}
-      <li>
-         <img src="{{html playlist.image}}"/>
-         <p class="title normal">{{html playlist.title}}</p>
-      </li>
-    {{/each}}
-    </ul>
+        <ul>
+        {{each(i, playlist) data}}
+          <li data-id="{{html playlist.id}}" data-music-client-type="{{html playlist.musicClientType}}">
+             <img src="{{html playlist.image}}"/>
+             <p class="title normal">{{html playlist.title}}</p>
+          </li>
+        {{/each}}
+        </ul>
     </script>
+
+    <script id="details-template" type="text/x-jquery-tmpl">
+        <img src="{{html imageBig}}"/>
+        <p class="title normal">{{html title}}</p>
+        <p class="description normal">{{html description}}</p>
+    </script>
+
   </head>
   <body>
     <div id="header">
@@ -37,6 +44,8 @@
         <p class="normal">Top Brazilian Playlists:</p>
         <div id="playlists"></div>
     </div>
+
+    <div id="details"></div>
 
   </body>
 </html>

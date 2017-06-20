@@ -4,11 +4,8 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import com.zp.exceptions.ZPRequestError;
-import com.zp.model.deezer.PlaylistDeezer;
+import com.zp.model.zp.Playlist;
 import com.zp.model.zp.Playlists;
-import com.zp.model.zp.Track;
-
-import java.util.List;
 
 /**
  * Generic client to access several Streaming Music APIs
@@ -49,10 +46,10 @@ public abstract class MusicClient {
     public abstract Playlists getPlaylists();
 
     /**
-     * Gets all tracks of the specified playlist
-     * @param playlist playlist to get tracks
-     * @return list of tracks
+     * Gets details of a playlist
+     * @param id of playlist
+     * @return playlist
      */
-    abstract List<Track> getTracksFromPlaylist(PlaylistDeezer playlist);
+    public abstract Playlist getPlaylist(Long id);
 
 }
