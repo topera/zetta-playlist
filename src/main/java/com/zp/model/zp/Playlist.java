@@ -7,6 +7,7 @@ package com.zp.model.zp;
 public class Playlist {
 
     private String title;
+    private String image;
 
     public String getTitle() {
         return title;
@@ -14,6 +15,14 @@ public class Playlist {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
 }

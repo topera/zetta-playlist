@@ -36,6 +36,7 @@ public abstract class DeezerConverter {
     private static Playlist convertPlaylist(PlaylistDeezer playlistDeezer){
         Playlist playlist = new Playlist();
         playlist.setTitle(playlistDeezer.getTitle());
+        playlist.setImage(playlistDeezer.getPicture());
         return playlist;
     }
 
