@@ -23,7 +23,7 @@ function Controller(){
      */
     this.loadPlaylists = function (musicClientType) {
         UTIL.log("Loading playlists from " + musicClientType);
-        var url = "/zp/api/playlist/" + musicClientType;
+        var url = "/api/playlist/" + musicClientType;
 
         $.getJSON(url, function (data) {
             $("#playlists").html($("#playlists-template").tmpl(data));
@@ -37,7 +37,7 @@ function Controller(){
      */
     this.loadDetails = function(id, musicClientType) {
         UTIL.log("Loading details of playlist " + id);
-        var url = "/zp/api/playlist/" + musicClientType + "/" + id;
+        var url = "/api/playlist/" + musicClientType + "/" + id;
 
         $.getJSON(url, function(data) {
             $("#details").html($("#details-template").tmpl(data));
