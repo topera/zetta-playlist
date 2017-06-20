@@ -21,7 +21,7 @@ class DeezerClientSpec extends Specification {
         def playlists = client.getPlaylists()
 
         then: "we get 10 playlists"
-        playlists.getData().size() == 10
+        playlists.getData().size() == 7
     }
 
 }
