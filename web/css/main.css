@@ -55,10 +55,27 @@ body {
 
 #playlists li {
     list-style-type: none;
+    width: 120px;
+    height: 240px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+
+#playlists li:hover {
+    border: 1px solid gray;
+    background-color: #23232c;
+    cursor: pointer;
+}
+
+#playlists li:hover .title {
+    color: white;
 }
 
 #playlists li .title {
+    text-align: center;
 }
+
 
 .normal {
     color: #32323d;

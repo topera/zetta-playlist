@@ -14,7 +14,8 @@
     <ul>
     {{each(i, playlist) data}}
       <li>
-         <p class="title normal">{{html playlist.title}} {{html playlist.image}}</p>
+         <img src="{{html playlist.image}}"/>
+         <p class="title normal">{{html playlist.title}}</p>
       </li>
     {{/each}}
     </ul>
