@@ -14,7 +14,7 @@ function Controller(){
         $.getJSON(url, function(data) {
             UTIL.log("Received");
             UTIL.log(data, false);
-            $("#playlists").html($("#playlists-template").tmpl(data))
+            $("#playlists").html($("#playlists-template").tmpl(data));
             UTIL.log("Template Updated");
         });
     }

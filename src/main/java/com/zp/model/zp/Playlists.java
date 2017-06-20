@@ -1,17 +1,20 @@
-package com.zp.model;
+package com.zp.model.zp;
 
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Created by rafael on 18/06/17.
+ * Created by rafael on 19/06/17.
  */
 @XmlRootElement
 public class Playlists {
 
     private List<Playlist> data;
-    private Integer total;
+
+    public Playlists(List<Playlist> data) {
+        this.data = data;
+    }
 
     public List<Playlist> getData() {
         return data;
@@ -19,14 +22,6 @@ public class Playlists {
 
     public void setData(List<Playlist> data) {
         this.data = data;
-    }
-
-    public Integer getTotal() {
-        return total;
-    }
-
-    public void setTotal(Integer total) {
-        this.total = total;
     }
 
 }

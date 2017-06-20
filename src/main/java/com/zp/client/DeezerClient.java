@@ -1,8 +1,10 @@
 package com.zp.client;
 
-import com.zp.model.Playlist;
-import com.zp.model.Playlists;
-import com.zp.model.Track;
+import com.zp.converters.DeezerConverter;
+import com.zp.model.deezer.PlaylistDeezer;
+import com.zp.model.deezer.PlaylistsDeezer;
+import com.zp.model.zp.Playlists;
+import com.zp.model.zp.Track;
 
 import java.util.List;
 
@@ -17,11 +19,12 @@ public class DeezerClient extends MusicClient {
 
     @Override
     public Playlists getPlaylists() {
-        return (Playlists) sendRequest(BASE_URL + URL_PLAYLISTS, Playlists.class);
+        PlaylistsDeezer playlistsDeezer = (PlaylistsDeezer) sendRequest(BASE_URL + URL_PLAYLISTS, PlaylistsDeezer.class);
+        return DeezerConverter.convertPlaylists(playlistsDeezer);
     }
 
     @Override
-    public List<Track> getTracksFromPlaylist(Playlist playlist) {
+    public List<Track> getTracksFromPlaylist(PlaylistDeezer playlist) {
         return null;
     }
 

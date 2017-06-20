@@ -2,7 +2,8 @@ package com.zp.api;
 
 import com.zp.client.MusicClient;
 import com.zp.client.MusicClientFactory;
-import com.zp.model.Playlists;
+import com.zp.client.MusicClientType;
+import com.zp.model.zp.Playlists;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -23,7 +24,8 @@ public class PlaylistResource {
      */
     @GET
     @Path("/{musicClientType}")
-    public Playlists list(@PathParam("musicClientType") String musicClientType) {
+    public Playlists list(@PathParam("musicClientType") String musicClientTypeParam) {
+        MusicClientType musicClientType = MusicClientType.convertString(musicClientTypeParam);
         MusicClient musicClient = MusicClientFactory.create(musicClientType);
         return musicClient.getPlaylists();
     }

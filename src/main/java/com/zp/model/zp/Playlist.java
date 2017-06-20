@@ -1,8 +1,8 @@
-package com.zp.model;
+package com.zp.model.zp;
 
 /**
  * Represents a playlist (collection of tracks)
- * Created by rafael on 18/06/17.
+ * Created by rafael on 19/06/17.
  */
 public class Playlist {
 

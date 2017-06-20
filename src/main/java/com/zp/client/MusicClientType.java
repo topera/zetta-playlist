@@ -7,6 +7,10 @@ package com.zp.client;
 public enum MusicClientType {
 
     DEEZER,
-    SPOTIFY
+    SPOTIFY;
+
+    public static MusicClientType convertString(String musicClientType) {
+        return MusicClientType.valueOf(musicClientType.toUpperCase());
+    }
 
 }

@@ -4,9 +4,9 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import com.zp.exceptions.ZPRequestError;
-import com.zp.model.Playlist;
-import com.zp.model.Playlists;
-import com.zp.model.Track;
+import com.zp.model.deezer.PlaylistDeezer;
+import com.zp.model.zp.Playlists;
+import com.zp.model.zp.Track;
 
 import java.util.List;
 
@@ -53,6 +53,6 @@ public abstract class MusicClient {
      * @param playlist playlist to get tracks
      * @return list of tracks
      */
-    abstract List<Track> getTracksFromPlaylist(Playlist playlist);
+    abstract List<Track> getTracksFromPlaylist(PlaylistDeezer playlist);
 
 }
