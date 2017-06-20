@@ -7,13 +7,14 @@
     <script src="js/zp/Util.js"></script>
     <script src="js/zp/Controller.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
 
     <script id="playlists-template" type="text/x-jquery-tmpl">
     <ul>
     {{each(i, playlist) data}}
       <li>
-         \${i+1} {{html playlist.title}}
+         <p class="title normal">{{html playlist.title}}</p>
       </li>
     {{/each}}
     </ul>
@@ -30,8 +31,11 @@
         </div>
     </div>
 
-    <br/>Top Brazilian Playlists:
-    <div id="playlists"></div>
+    <div id="playlists-wrapper">
+        <br/>
+        <p class="normal">Top Brazilian Playlists:</p>
+        <div id="playlists"></div>
+    </div>
 
   </body>
 </html>

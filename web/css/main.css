@@ -1,12 +1,19 @@
+* {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
 body {
-    padding: 25px 20px;
+    margin: 0;
+    padding: 0 0 25px 0;
+    background-color: #ffffff;
 }
 
 #header {
     width: 100%;
     height: 143px;
     background-color: #23232c;
-    padding: 5px;
+    padding: 5px 0;
+    box-shadow: 0 0 10px #669;
 }
 
 #header .left {
@@ -42,9 +49,19 @@ body {
     margin-bottom: 10px;
 }
 
-#playlists {
-    background-color: #72727d;
+#playlists-wrapper {
+    padding: 10px 20px;
 }
+
 #playlists li {
     list-style-type: none;
 }
+
+#playlists li .title {
+}
+
+.normal {
+    color: #32323d;
+}
+
+
