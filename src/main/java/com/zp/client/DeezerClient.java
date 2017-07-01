@@ -12,6 +12,8 @@ import com.zp.model.zp.Playlists;
  */
 public class DeezerClient extends MusicClient {
 
+    import a
+
     private static final String BASE_URL = "http://api.deezer.com";
     private static final String URL_PLAYLISTS = "/chart/0/playlists";
     private static final String URL_PLAYLIST = "/playlist";
