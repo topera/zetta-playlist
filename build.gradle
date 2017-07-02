@@ -1,0 +1,25 @@
+apply plugin: "groovy"
+
+version = "0.03"
+description = "Zetta Playlist"
+
+repositories { // tem que ter pelo menos 1, senao nao sabe de onde baixar
+    mavenCentral()
+}
+
+dependencies {
+
+    // used to import reference implementation of JAX-RS
+    compile 'com.sun.jersey:jersey-servlet:1.19.4'
+
+    // used to have a Rest client (jackson)
+    compile 'com.sun.jersey:jersey-client:1.19.4'
+
+    // used to serialize/unserialize class from/to JSON
+    compile 'com.sun.jersey:jersey-json:1.19.4'
+
+    // Used as improvement of junit
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+
+}
+
