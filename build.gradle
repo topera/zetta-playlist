@@ -11,6 +11,7 @@ repositories {
 
 description = "Zetta Playlist"
 
+//noinspection GroovyAssignabilityCheck
 war {
     baseName = 'zetta'
     version =  '0.0.1'
