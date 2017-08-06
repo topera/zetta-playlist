@@ -27,9 +27,8 @@ dependencies {
     // TO ORGANIZE
 //        // used to import reference implementation of JAX-RS
 //        compile 'com.sun.jersey:jersey-servlet:1.19.4'
-//
-//        // used to have a Rest client (jackson)
-//        compile 'com.sun.jersey:jersey-client:1.19.4'
+        // used to have a Rest client (jackson)
+        compile 'com.sun.jersey:jersey-client:1.19.4'
 //
 //        // used to serialize/unserialize class from/to JSON
 //        compile 'com.sun.jersey:jersey-json:1.19.4'

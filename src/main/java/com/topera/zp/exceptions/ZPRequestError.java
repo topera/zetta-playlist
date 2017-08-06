@@ -3,8 +3,7 @@ package com.topera.zp.exceptions;
 import com.topera.zp.util.I18n;
 
 /**
- * Used when request has error
- * Created by rafael on 18/06/17.
+ * Created by topera on 18/06/17.
  */
 public class ZPRequestError extends ZPException {
 

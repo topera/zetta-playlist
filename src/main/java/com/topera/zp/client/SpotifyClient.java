@@ -6,7 +6,7 @@ import com.topera.zp.model.zp.Playlists;
 
 /**
  * Client to access Spotify API (not implemented)
- * Created by rafael on 18/06/17.
+ * Created by topera on 18/06/17.
  */
 public class SpotifyClient extends MusicClient {
 

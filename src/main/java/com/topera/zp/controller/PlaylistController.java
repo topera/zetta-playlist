@@ -1,31 +1,27 @@
-package com.topera.zp.api;
+package com.topera.zp.controller;
 
 import com.topera.zp.client.MusicClient;
 import com.topera.zp.client.MusicClientFactory;
-import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.client.MusicClientType;
+import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.model.zp.Playlists;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by rafael on 18/06/17.
+ * Created by topera on 18/06/17.
  */
-@Produces({MediaType.APPLICATION_JSON})
-@Path("playlist")
-public class PlaylistResource {
+@RestController
+public class PlaylistController {
 
     /**
      * List all playlists
      * @return playlists
      */
-    @GET
-    @Path("/{musicClientType}")
-    public Playlists list(@PathParam("musicClientType") String musicClientType) {
+    @RequestMapping("/api/playlist/{musicClientType}")
+    public Playlists list(@PathVariable String musicClientType) {
         MusicClient musicClient = createMusicClient(musicClientType);
         return musicClient.getPlaylists();
     }
@@ -34,9 +30,8 @@ public class PlaylistResource {
      * List details of a playlist
      * @return playlist
      */
-    @GET
-    @Path("/{musicClientType}/{id}")
-    public Playlist list(@PathParam("musicClientType") String musicClientType, @PathParam("id") String id) {
+    @RequestMapping("/api/playlist/{musicClientType}/{id}")
+    public Playlist list(@PathVariable String musicClientType, @PathVariable String id) {
         MusicClient musicClient = createMusicClient(musicClientType);
         return musicClient.getPlaylist(Long.valueOf(id));
     }

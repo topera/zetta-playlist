@@ -1,14 +1,13 @@
 package com.topera.zp.client;
 
 import com.topera.zp.converters.DeezerConverter;
+import com.topera.zp.model.deezer.PlaylistDeezer;
 import com.topera.zp.model.deezer.PlaylistsDeezer;
 import com.topera.zp.model.zp.Playlist;
-import com.topera.zp.model.deezer.PlaylistDeezer;
 import com.topera.zp.model.zp.Playlists;
 
 /**
- * Client to access Deezer API
- * Created by rafael on 18/06/17.
+ * Created by topera on 18/06/17.
  */
 public class DeezerClient extends MusicClient {
 

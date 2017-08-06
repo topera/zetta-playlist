@@ -1,26 +1,21 @@
 package com.topera.zp.converters;
 
-import com.topera.zp.model.deezer.PlaylistsDeezer;
-import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.client.MusicClientType;
 import com.topera.zp.model.deezer.PlaylistDeezer;
+import com.topera.zp.model.deezer.PlaylistsDeezer;
+import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.model.zp.Playlists;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by rafael on 19/06/17.
+ * Created by topera on 19/06/17.
  */
 public abstract class DeezerConverter {
 
     private static final int MAX_PLAYLISTS = 7;
 
-    /**
-     * Converts Playlists from Deezer to our format
-     * @param playlistsDeezer deezer format
-     * @return zp format
-     */
     public static Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){
         List<Playlist> data = new ArrayList<>();
 
@@ -34,11 +29,6 @@ public abstract class DeezerConverter {
         return new Playlists(data);
     }
 
-    /**
-     * Converts one Playlist from Deezer to our format
-     * @param playlistDeezer deezer format
-     * @return zp format
-     */
     public static Playlist convertPlaylist(PlaylistDeezer playlistDeezer){
         Playlist playlist = new Playlist();
 

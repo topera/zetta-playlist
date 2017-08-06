@@ -3,8 +3,7 @@ package com.topera.zp.model.deezer;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Represents a playlist (collection of tracks)
- * Created by rafael on 18/06/17.
+ * Created by topera on 18/06/17.
  */
 @XmlRootElement
 public class PlaylistDeezer {
