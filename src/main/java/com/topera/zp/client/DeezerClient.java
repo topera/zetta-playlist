@@ -6,12 +6,10 @@ import com.topera.zp.model.deezer.PlaylistsDeezer;
 import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.model.zp.Playlists;
 
-import org.springframework.web.client.RestTemplate;
-
 /**
  * Created by topera on 18/06/17.
  */
-public class DeezerClient extends MusicClient {
+public class DeezerClient implements MusicClient {
 
     private static final String BASE_URL = "http://api.deezer.com";
     private static final String URL_PLAYLISTS = "/chart/0/playlists";
@@ -20,16 +18,14 @@ public class DeezerClient extends MusicClient {
     @Override
     public Playlists getPlaylists() {
         String url = BASE_URL + URL_PLAYLISTS;
-        RestTemplate restTemplate = new RestTemplate();
-        PlaylistsDeezer playlistsDeezer = restTemplate.getForObject(url, PlaylistsDeezer.class);
+        PlaylistsDeezer playlistsDeezer = sendRequest(url, PlaylistsDeezer.class);
         return DeezerConverter.convertPlaylists(playlistsDeezer);
     }
 
     @Override
     public Playlist getPlaylist(Long id) {
         String url = BASE_URL + URL_PLAYLIST + "/" + id;
-        RestTemplate restTemplate = new RestTemplate();
-        PlaylistDeezer playlistDeezer = restTemplate.getForObject(url, PlaylistDeezer.class);
+        PlaylistDeezer playlistDeezer = sendRequest(url, PlaylistDeezer.class);
         return DeezerConverter.convertPlaylist(playlistDeezer);
     }
 

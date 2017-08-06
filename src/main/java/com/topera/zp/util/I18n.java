@@ -12,6 +12,9 @@ public abstract class I18n {
 
     private static ResourceBundle resourceBundle = ResourceBundle.getBundle(MESSAGES_FILE);
 
+    private I18n() {
+    }
+
     public static String getMessage(String key, String... params) {
         return MessageFormat.format(resourceBundle.getString(key), (Object) params);
     }
