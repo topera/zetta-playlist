@@ -1,6 +1,9 @@
-1
+
+IN PROGRESS
+
+DEV IMPROVEMENTS
     Boot is not displaying index.jsp. It's serving this to be downloaded
-2
     Seems that we need to specify index here: http://localhost:8080/index.jsp
-3
     Specify this a base path: "/api/playlist/"
+APP IMPROVEMENTS
+

@@ -1,11 +1,11 @@
 package com.topera.zp.model.deezer;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * Created by topera on 18/06/17.
  */
-@XmlRootElement
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class PlaylistDeezer {
 
     private Long id;

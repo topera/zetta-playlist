@@ -20,16 +20,10 @@ war {
 dependencies {
     // spring boot: basic web configuration
     compile("org.springframework.boot:spring-boot-starter-web")
+
     // adjust war generation
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
     // spock
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
-
-    // TODO: remove these dependencies and use only Spring Boot
-        // used to import reference implementation of JAX-RS
-        compile 'com.sun.jersey:jersey-servlet:1.19.4'
-        // used to have a Rest client (jackson)
-        compile 'com.sun.jersey:jersey-client:1.19.4'
-        // used to serialize/unserialize class from/to JSON
-        compile 'com.sun.jersey:jersey-json:1.19.4'
 }
