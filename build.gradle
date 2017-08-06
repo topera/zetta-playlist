@@ -1,5 +1,6 @@
 // please use gradle 4.0.0
 plugins {
+    id 'idea'   // better IDEA support
     id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
     id 'war'
     id 'org.springframework.boot' version '1.5.6.RELEASE'
@@ -14,7 +15,7 @@ description = "Zetta Playlist"
 //noinspection GroovyAssignabilityCheck
 war {
     baseName = 'zetta'
-    version =  '0.0.1'
+    version =  '0.0.3'
 }
 
 dependencies {
