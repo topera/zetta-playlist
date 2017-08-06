@@ -1,1 +1,2 @@
 * Specify this a base path: "/api/playlist/"
+* Seems that we need to specify index here: http://localhost:8080/index.jsp
