@@ -1,4 +1,4 @@
-// please use gradle 3.5.1
+// please use gradle 4.0.0
 plugins {
     id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
     id 'war'
