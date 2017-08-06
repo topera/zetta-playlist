@@ -24,7 +24,7 @@ dependencies {
     // spock
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
 
-    // TO ORGANIZE
+    // TODO: remove these dependencies and use only Spring Boot
         // used to import reference implementation of JAX-RS
         compile 'com.sun.jersey:jersey-servlet:1.19.4'
         // used to have a Rest client (jackson)
