@@ -3,9 +3,6 @@ package com.topera.zp.util;
 import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
-/**
- * Created by topera on 18/06/17.
- */
 public abstract class I18n {
 
     private static final String MESSAGES_FILE = "messages";

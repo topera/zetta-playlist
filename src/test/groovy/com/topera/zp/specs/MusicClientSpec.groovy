@@ -6,9 +6,6 @@ import com.topera.zp.client.MusicClientType
 import com.topera.zp.exceptions.ZPRequestError
 import spock.lang.Specification
 
-/**
- * Created by topera on 18/06/17.
- */
 class MusicClientSpec extends Specification {
 
     def "send request to wrong url returns error"() {

@@ -4,9 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
-/**
- * Created by topera on 18/06/17.
- */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PlaylistsDeezer {
 

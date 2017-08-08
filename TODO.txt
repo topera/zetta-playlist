@@ -1,5 +1,8 @@
 
 IN PROGRESS
+    version
+        should be updated automatically
+        should have build date
 
 DEV IMPROVEMENTS
     Boot is not displaying index.jsp. It's serving this to be downloaded

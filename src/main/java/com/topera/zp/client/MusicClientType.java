@@ -1,8 +1,5 @@
 package com.topera.zp.client;
 
-/**
- * Created by topera on 18/06/17.
- */
 public enum MusicClientType {
 
     DEEZER,

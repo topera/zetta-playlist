@@ -7,9 +7,6 @@ import com.topera.zp.client.SpotifyClient
 import com.topera.zp.exceptions.ZPNotSupportedException
 import spock.lang.Specification
 
-/**
- * Created by topera on 18/06/17.
- */
 class MusicClientFactorySpec extends Specification {
 
     def "get invalid music client"() {
