@@ -5,9 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
-/**
- * Created by topera on 30/07/17.
- */
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 

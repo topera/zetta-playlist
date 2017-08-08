@@ -5,9 +5,6 @@ import com.topera.zp.client.MusicClientFactory
 import com.topera.zp.client.MusicClientType
 import spock.lang.Specification
 
-/**
- * Created by topera on 18/06/17.
- */
 class DeezerClientSpec extends Specification {
 
     DeezerClient client

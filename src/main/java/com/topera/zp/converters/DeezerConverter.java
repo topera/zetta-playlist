@@ -9,9 +9,6 @@ import com.topera.zp.model.zp.Playlists;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by topera on 19/06/17.
- */
 public abstract class DeezerConverter {
 
     private DeezerConverter() {

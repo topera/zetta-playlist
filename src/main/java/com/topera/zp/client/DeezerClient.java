@@ -6,9 +6,6 @@ import com.topera.zp.model.deezer.PlaylistsDeezer;
 import com.topera.zp.model.zp.Playlist;
 import com.topera.zp.model.zp.Playlists;
 
-/**
- * Created by topera on 18/06/17.
- */
 public class DeezerClient implements MusicClient {
 
     private static final String BASE_URL = "http://api.deezer.com";

@@ -4,9 +4,6 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by topera on 19/06/17.
- */
 @XmlRootElement
 public class Playlists {
 
