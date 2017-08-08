@@ -22,9 +22,8 @@ public abstract class DeezerConverter {
     public static Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){
         List<Playlist> data = new ArrayList<>();
 
-        int maxPlaylists = MAX_PLAYLISTS;
         for (PlaylistDeezer playlistDeezer : playlistsDeezer.getData()) {
-            if (data.size() < maxPlaylists) {
+            if (data.size() < MAX_PLAYLISTS) {
                 data.add(convertPlaylist(playlistDeezer));
             }
         }
