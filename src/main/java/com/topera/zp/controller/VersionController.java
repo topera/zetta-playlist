@@ -10,7 +10,7 @@ public class VersionController {
 
     @RequestMapping("/api/version")
     public Version list() {
-        return new Version("0.0.3");
+        return new Version("0.0.5");
     }
 
 }
