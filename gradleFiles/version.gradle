@@ -1,0 +1,14 @@
+// create version.txt file
+task createVersion {
+    doLast {
+        def version = project.version.toString()
+        println "Creating WAR file with version $version"
+        def file = new File("$buildDir/resources/main/version.txt")
+        file.write(version)
+    }
+}
+
+//noinspection GroovyAssignabilityCheck
+war {
+    dependsOn createVersion
+}
