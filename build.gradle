@@ -15,7 +15,7 @@ description = "Zetta Playlist"
 //noinspection GroovyAssignabilityCheck
 war {
     baseName = 'zetta'
-    version =  '0.0.3'
+    version =  '0.0.5'
 }
 
 dependencies {
