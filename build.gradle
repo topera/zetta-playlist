@@ -12,10 +12,23 @@ repositories {
 
 description = "Zetta Playlist"
 
+version = '0.0.6'
+
+defaultTasks 'bootRun'
+
+task createProperties {
+    doLast {
+        def version = project.version.toString()
+        println "Creating WAR file with version $version"
+        def file = new File("$buildDir/resources/main/version.txt")
+        file.write(version)
+    }
+}
+
 //noinspection GroovyAssignabilityCheck
 war {
     baseName = 'zetta'
-    version =  '0.0.5'
+    dependsOn createProperties
 }
 
 dependencies {
