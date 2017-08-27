@@ -13,7 +13,7 @@ import spock.lang.Specification
 
 @RunWith(SpringRunner)
 @SpringBootTest(classes=Application, webEnvironment=SpringBootTest.WebEnvironment.RANDOM_PORT)
-class VersionControllerFunctionalSpec extends Specification {
+class CoreFunctionalSpec extends Specification {
 
     @LocalServerPort
     private int port;

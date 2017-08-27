@@ -1,4 +1,4 @@
-package unit.com.topera.zp.specs
+package unit.com.topera.zp.client
 
 import com.topera.zp.client.DeezerClient
 import com.topera.zp.client.MusicClientFactory
