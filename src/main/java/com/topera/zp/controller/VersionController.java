@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 public class VersionController {
 
     @RequestMapping("/api/version")
-    public Version list() {
+    public Version getVersion() {
         try {
             Path path = Paths.get(new ClassPathResource("version.txt").getFile().getPath());
             return new Version(new String(Files.readAllBytes(path)));
