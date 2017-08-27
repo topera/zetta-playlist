@@ -1,10 +1,7 @@
 
 IN PROGRESS
-    version
-        should have build date
-
 DEV IMPROVEMENTS
-    Specify this a base path: "/api/playlist/"
+    Specify base path for API: "/api"
 APP IMPROVEMENTS
 ROADMAP
-    Use devtools
+    Add devtools as dependency
