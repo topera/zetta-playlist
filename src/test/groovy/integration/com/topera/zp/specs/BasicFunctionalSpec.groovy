@@ -1,4 +1,4 @@
-package functional.com.topera.zp.specs
+package integration.com.topera.zp.specs
 
 import com.topera.zp.Application
 import com.topera.zp.controller.VersionController
@@ -11,19 +11,23 @@ import spock.lang.Specification
 
 @RunWith(SpringRunner)
 @SpringBootTest(classes=Application)
-class FooSpec extends Specification {
+class BasicFunctionalSpec extends Specification {
 
     @Autowired
     private VersionController controller;
 
-    @Test
-    def "get version"() {
-        when:
-        def a = 1
+    private VersionController controllerNotInjected;
 
-        then:
-        controller.getVersion()
+    @Test
+    def "controller NOT injected"() {
+        expect:
+        !controllerNotInjected
     }
 
+    @Test
+    def "controller injected"() {
+        expect:
+        controller
+    }
 
 }

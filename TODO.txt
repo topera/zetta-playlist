@@ -4,8 +4,7 @@ IN PROGRESS
         should have build date
 
 DEV IMPROVEMENTS
-    Boot is not displaying index.jsp. It's serving this to be downloaded
-    Seems that we need to specify index here: http://localhost:8080/index.jsp
     Specify this a base path: "/api/playlist/"
 APP IMPROVEMENTS
-
+ROADMAP
+    Use devtools

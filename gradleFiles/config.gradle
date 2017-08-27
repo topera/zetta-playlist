@@ -2,7 +2,6 @@ defaultTasks 'bootRun'
 description = "Zetta Playlist"
 version = '0.0.6'
 
-//noinspection GroovyAssignabilityCheck
 war {
     baseName = 'zetta'
 }

@@ -8,7 +8,11 @@ task createVersion {
     }
 }
 
-//noinspection GroovyAssignabilityCheck
 war {
     dependsOn createVersion
+}
+
+test {
+    // before run tests, we need to run war first, to have version.txt created
+    dependsOn war
 }
