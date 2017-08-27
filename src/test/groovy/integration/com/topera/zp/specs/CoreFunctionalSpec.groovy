@@ -27,7 +27,7 @@ class CoreFunctionalSpec extends Specification {
         def version = readPage("/api/version", Version)
 
         then: "receive version"
-        version.getName().matches(/\d+\.\d+\.\d+/)
+        version.getName().matches(/v\d+\.\d+\.\d+-\d{6}.\d{6}/)
     }
 
     @Test
