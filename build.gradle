@@ -2,29 +2,16 @@
 plugins {
     id 'idea'   // better IDEA support
     id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
-    id 'war'
-    id 'org.springframework.boot' version '1.5.6.RELEASE'
+    id 'war'    // allows war creation
+    id 'org.springframework.boot' version '1.5.6.RELEASE' // spring boot
 }
 
 repositories {
     jcenter()
 }
 
-description = "Zetta Playlist"
+apply from: 'gradleFiles/config.gradle'
+apply from: 'gradleFiles/version.gradle'
+apply from: 'gradleFiles/dependencies.gradle'
 
-//noinspection GroovyAssignabilityCheck
-war {
-    baseName = 'zetta'
-    version =  '0.0.5'
-}
 
-dependencies {
-    // spring boot: basic web configuration
-    compile("org.springframework.boot:spring-boot-starter-web")
-
-    // adjust war generation
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-
-    // spock
-    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
-}

@@ -11,9 +11,6 @@ import java.util.List;
 
 public abstract class DeezerConverter {
 
-    private DeezerConverter() {
-    }
-
     private static final int MAX_PLAYLISTS = 7;
 
     public static Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){

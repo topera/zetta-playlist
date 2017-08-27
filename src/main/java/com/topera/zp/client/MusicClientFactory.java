@@ -7,9 +7,6 @@ import static com.topera.zp.client.MusicClientType.SPOTIFY;
 
 public abstract class MusicClientFactory {
 
-    private MusicClientFactory() {
-    }
-
     public static MusicClient create(MusicClientType type){
         if (type == DEEZER) {
             return new DeezerClient();

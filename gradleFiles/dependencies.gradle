@@ -1,0 +1,13 @@
+dependencies {
+    // spring boot: basic web configuration
+    compile("org.springframework.boot:spring-boot-starter-web")
+
+    // adjust war generation
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
+    // spock
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+
+    // spring boot test
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}

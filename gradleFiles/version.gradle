@@ -1,0 +1,18 @@
+// create version.txt file
+task createVersion {
+    doLast {
+        def version = project.version.toString()
+        println "Creating WAR file with version $version"
+        def file = new File("$buildDir/resources/main/version.txt")
+        file.write(version)
+    }
+}
+
+war {
+    dependsOn createVersion
+}
+
+test {
+    // before run tests, we need to run war first, to have version.txt created
+    dependsOn war
+}
