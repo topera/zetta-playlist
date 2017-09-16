@@ -1,5 +1,7 @@
 
 IN PROGRESS
+    increase code coverage
+    integrate with sonar cloud
 DEV IMPROVEMENTS
     Specify base path for API: "/api"
 APP IMPROVEMENTS

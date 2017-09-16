@@ -10,6 +10,8 @@ repositories {
     jcenter()
 }
 
+defaultTasks 'clean', 'war', 'bootRun'
+
 apply from: 'gradleFiles/config.gradle'
 apply from: 'gradleFiles/version.gradle'
 apply from: 'gradleFiles/dependencies.gradle'

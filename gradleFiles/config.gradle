@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat
 
 defaultTasks 'bootRun'
 description = "Zetta Playlist"
-version = 'v0.0.6-' + new SimpleDateFormat("yyMMdd.HHmmss").format(new Date())
+version = 'v0.0.7-' + new SimpleDateFormat("yyMMdd.HHmmss").format(new Date())
 
 war {
     baseName = 'zetta'
