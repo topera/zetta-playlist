@@ -7,10 +7,11 @@ import com.topera.zp.model.zp.Playlists;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
-public interface MusicClient {
+public abstract class MusicClient {
 
-    default <T> T sendRequest(String url, Class<T> responseType) {
-        RestTemplate restTemplate = new RestTemplate();
+    private RestTemplate restTemplate = new RestTemplate();
+
+    <T> T sendRequest(String url, Class<T> responseType) {
         try {
             return restTemplate.getForObject(url, responseType);
         } catch (HttpClientErrorException e) {
@@ -18,8 +19,8 @@ public interface MusicClient {
         }
     }
 
-    Playlists getPlaylists();
+    public abstract Playlists findPlaylists();
 
-    Playlist getPlaylist(Long id);
+    public abstract Playlist findPlaylist(Long id);
 
 }

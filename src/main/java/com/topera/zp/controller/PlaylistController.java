@@ -20,7 +20,7 @@ public class PlaylistController {
     @RequestMapping("/api/playlist/{musicClientType}")
     public Playlists list(@PathVariable String musicClientType) {
         MusicClient musicClient = createMusicClient(musicClientType);
-        return musicClient.getPlaylists();
+        return musicClient.findPlaylists();
     }
 
     /**
@@ -30,7 +30,7 @@ public class PlaylistController {
     @RequestMapping("/api/playlist/{musicClientType}/{id}")
     public Playlist list(@PathVariable String musicClientType, @PathVariable String id) {
         MusicClient musicClient = createMusicClient(musicClientType);
-        return musicClient.getPlaylist(Long.valueOf(id));
+        return musicClient.findPlaylist(Long.valueOf(id));
     }
 
     private static MusicClient createMusicClient(String musicClientTypeParam) {

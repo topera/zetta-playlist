@@ -7,15 +7,15 @@ import com.topera.zp.model.zp.Playlists;
 /**
  * Client to access Spotify API (not implemented)
  */
-public class SpotifyClient implements MusicClient {
+public class SpotifyClient extends MusicClient {
 
     @Override
-    public Playlists getPlaylists() {
+    public Playlists findPlaylists() {
         throw new ZPNotSupportedException();
     }
 
     @Override
-    public Playlist getPlaylist(Long id) {
+    public Playlist findPlaylist(Long id) {
         throw new ZPNotSupportedException();
     }
 

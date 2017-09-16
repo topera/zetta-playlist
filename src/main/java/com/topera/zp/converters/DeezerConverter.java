@@ -9,11 +9,11 @@ import com.topera.zp.model.zp.Playlists;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class DeezerConverter {
+public class DeezerConverter {
 
     private static final int MAX_PLAYLISTS = 7;
 
-    public static Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){
+    public Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){
         List<Playlist> data = new ArrayList<>();
 
         for (PlaylistDeezer playlistDeezer : playlistsDeezer.getData()) {
@@ -25,7 +25,7 @@ public abstract class DeezerConverter {
         return new Playlists(data);
     }
 
-    public static Playlist convertPlaylist(PlaylistDeezer playlistDeezer){
+    public Playlist convertPlaylist(PlaylistDeezer playlistDeezer){
         Playlist playlist = new Playlist();
 
         playlist.setId(playlistDeezer.getId());
