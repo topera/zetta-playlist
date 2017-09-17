@@ -6,7 +6,8 @@ package com.terahorse.zp.client;
 
 public enum MusicClientType {
 
-    DEEZER;
+    DEEZER,
+    SPOTIFY;
 
     public static MusicClientType convertString(String musicClientType) {
         return MusicClientType.valueOf(musicClientType.toUpperCase());
