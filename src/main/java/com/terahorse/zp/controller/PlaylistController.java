@@ -22,7 +22,7 @@ public class PlaylistController {
      * @return playlists
      */
     @RequestMapping("/api/playlist/{musicClientType}")
-    public Playlists list(@PathVariable String musicClientType) {
+    public Playlists listAll(@PathVariable String musicClientType) {
         MusicClient musicClient = createMusicClient(musicClientType);
         return musicClient.findPlaylists();
     }
@@ -32,7 +32,7 @@ public class PlaylistController {
      * @return playlist
      */
     @RequestMapping("/api/playlist/{musicClientType}/{id}")
-    public Playlist list(@PathVariable String musicClientType, @PathVariable String id) {
+    public Playlist listOne(@PathVariable String musicClientType, @PathVariable String id) {
         MusicClient musicClient = createMusicClient(musicClientType);
         return musicClient.findPlaylist(Long.valueOf(id));
     }

@@ -8,3 +8,7 @@ DEV IMPROVEMENTS
 APP IMPROVEMENTS
 ROADMAP
     Add devtools as dependency
+
+TECH GUIDE
+    * Tests
+        * We should unit test ALL classes, except controllers. They are tested in integration tests.

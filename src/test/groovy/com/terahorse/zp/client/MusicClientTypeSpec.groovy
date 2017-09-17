@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client
 
-import com.terahorse.zp.common.BaseUnitSpec
+import com.terahorse.zp.BaseUnitSpec
 
 class MusicClientTypeSpec extends BaseUnitSpec {
 

@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client
 
-import com.terahorse.zp.common.BaseRestTemplateSpec
+import com.terahorse.zp.BaseRestTemplateSpec
 import com.terahorse.zp.exceptions.ZPRequestError
 import com.terahorse.zp.model.deezer.PlaylistDeezer
 import com.terahorse.zp.model.deezer.PlaylistsDeezer

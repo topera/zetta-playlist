@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client
 
-import com.terahorse.zp.common.BaseUnitSpec
+import com.terahorse.zp.BaseUnitSpec
 import com.terahorse.zp.exceptions.ZPNotSupportedException
 
 class MusicClientFactorySpec extends BaseUnitSpec {

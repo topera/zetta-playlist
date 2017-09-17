@@ -2,7 +2,7 @@
  * Copyright (c) 2017 - Terahorse
  */
 
-package com.terahorse.zp.common
+package com.terahorse.zp
 
 import org.mockito.MockitoAnnotations
 import spock.lang.Specification
