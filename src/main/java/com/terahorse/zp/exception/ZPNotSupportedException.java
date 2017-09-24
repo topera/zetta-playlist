@@ -2,7 +2,7 @@
  * Copyright (c) 2017 - Terahorse
  */
 
-package com.terahorse.zp.exceptions;
+package com.terahorse.zp.exception;
 
 import com.terahorse.zp.util.I18n;
 

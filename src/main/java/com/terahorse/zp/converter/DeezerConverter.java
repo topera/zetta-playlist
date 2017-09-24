@@ -2,7 +2,7 @@
  * Copyright (c) 2017 - Terahorse
  */
 
-package com.terahorse.zp.converters;
+package com.terahorse.zp.converter;
 
 import com.terahorse.zp.client.MusicClientType;
 import com.terahorse.zp.model.deezer.PlaylistDeezer;

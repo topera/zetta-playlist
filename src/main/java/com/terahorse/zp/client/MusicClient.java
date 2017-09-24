@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client;
 
-import com.terahorse.zp.exceptions.ZPRequestError;
+import com.terahorse.zp.exception.ZPRequestError;
 import com.terahorse.zp.model.zp.Playlist;
 import com.terahorse.zp.model.zp.Playlists;
 

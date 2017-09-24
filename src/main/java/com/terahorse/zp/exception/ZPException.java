@@ -2,7 +2,7 @@
  * Copyright (c) 2017 - Terahorse
  */
 
-package com.terahorse.zp.exceptions;
+package com.terahorse.zp.exception;
 
 /**
  * All exceptions of ZP (ZettaPlaylist) will extend this base exception, to organize code

@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client;
 
-import com.terahorse.zp.converters.DeezerConverter;
+import com.terahorse.zp.converter.DeezerConverter;
 import com.terahorse.zp.model.deezer.PlaylistDeezer;
 import com.terahorse.zp.model.deezer.PlaylistsDeezer;
 import com.terahorse.zp.model.zp.Playlist;

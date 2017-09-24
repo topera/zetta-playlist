@@ -4,7 +4,7 @@
 
 package com.terahorse.zp.client;
 
-import com.terahorse.zp.exceptions.ZPNotSupportedException;
+import com.terahorse.zp.exception.ZPNotSupportedException;
 
 import static com.terahorse.zp.client.MusicClientType.DEEZER;
 

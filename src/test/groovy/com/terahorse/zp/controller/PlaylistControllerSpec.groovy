@@ -19,7 +19,7 @@ class PlaylistControllerSpec extends BaseIntegrationSpec {
         playlists.getData().size() == 7
     }
 
-    //@Test
+    @Test
     def "listAll() - invalid page"() {
         when: "read invalid page"
         def playlists = readPage("/api/playlist/unknown", Playlists)
