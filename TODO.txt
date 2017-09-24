@@ -1,11 +1,7 @@
 
-IN PROGRESS
-    increase code coverage
-        change mockito things by 100% spock?
-    integrate with sonar cloud
-DEV IMPROVEMENTS
-    Specify base path for API: "/api"
-APP IMPROVEMENTS
+TODO
+    sonar cloud
+    jacoco
 ROADMAP
     Add devtools as dependency
 
