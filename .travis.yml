@@ -7,3 +7,6 @@ addons:
     organization: "topera-github"
     token:
       secure: "7b6e7ac4ac4aabe7feb6fe67217f0b11e352e99c"
+    branches:
+      - dev
+      - master
