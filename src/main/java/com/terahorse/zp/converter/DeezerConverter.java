@@ -20,9 +20,11 @@ public class DeezerConverter {
     public Playlists convertPlaylists(PlaylistsDeezer playlistsDeezer){
         List<Playlist> data = new ArrayList<>();
 
-        for (PlaylistDeezer playlistDeezer : playlistsDeezer.getData()) {
-            if (data.size() < MAX_PLAYLISTS) {
-                data.add(convertPlaylist(playlistDeezer));
+        if (playlistsDeezer.getData() != null) {
+            for (PlaylistDeezer playlistDeezer : playlistsDeezer.getData()) {
+                if (data.size() < MAX_PLAYLISTS) {
+                    data.add(convertPlaylist(playlistDeezer));
+                }
             }
         }
 

@@ -11,4 +11,7 @@ ROADMAP
 
 TECH GUIDE
     * Tests
-        * We should unit test ALL classes, except controllers. They are tested in integration tests.
+        * We should unit test ALL classes, except:
+            - Controllers: They are tested in integration tests.
+            - Model classes: we should not have logic in model classes
+            - Exceptions

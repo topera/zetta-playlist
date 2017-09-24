@@ -5,6 +5,7 @@
 package com.terahorse.zp.controller
 
 import com.terahorse.zp.BaseIntegrationSpec
+import com.terahorse.zp.model.zp.Playlist
 import com.terahorse.zp.model.zp.Playlists
 import org.junit.Test
 
@@ -20,17 +21,12 @@ class PlaylistControllerSpec extends BaseIntegrationSpec {
     }
 
     @Test
-    def "listAll() - invalid page"() {
-        when: "read invalid page"
-        def playlists = readPage("/api/playlist/unknown", Playlists)
+    def "listOne()"() {
+        when: "read one playlist"
+        def playlist = readPage("/api/playlist/deezer/123", Playlist)
 
-        then: "we have 7 playlists"
-        playlists.getData().size() == 7 // TODO: DOING
+        then: "we get the playlist"
+        playlist.getTitle() == 'ma musique'
     }
-
-//    @Test
-//    def "listOne()"() {
-//
-//    }
 
 }
