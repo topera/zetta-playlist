@@ -5,8 +5,9 @@ jdk:
 addons:
   sonarcloud:
     organization: "topera-github"
-    token:
-      secure: "7b6e7ac4ac4aabe7feb6fe67217f0b11e352e99c"
+    #token:
+      #secure: "token stored in travis-ci -> repo -> settings -> Environment variables -> SONAR_TOKEN = xxxxx"
     branches:
-      - dev
+      - dev # dev is here because by default analyses only master branch
       - master
+
