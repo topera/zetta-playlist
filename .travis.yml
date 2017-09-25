@@ -2,8 +2,8 @@ dist: trusty # only Ubuntu Trusty allows usage of Java 8 in Travis CI
 language: java
 jdk:
   - oraclejdk8
-#script:
-#  - ./gradlew sonarqube
+script:
+  - ./gradlew sonarqube
 addons:
   sonarcloud:
     organization: "topera-github"
