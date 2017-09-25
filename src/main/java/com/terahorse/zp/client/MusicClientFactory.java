@@ -10,6 +10,9 @@ import static com.terahorse.zp.client.MusicClientType.DEEZER;
 
 public abstract class MusicClientFactory {
 
+    private MusicClientFactory() {
+    }
+
     public static MusicClient create(MusicClientType type){
         if (type == DEEZER) {
             return new DeezerClient();
