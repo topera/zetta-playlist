@@ -12,9 +12,9 @@ addons:
     branches:
       - dev # dev is here because by default analyses only master branch
       - master
-cache: # optional: reduce time, caching some things...
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.sonar/cache'
-    - '$HOME/.gradle'
-    - '.gradle'
+#cache: # optional: reduce time, caching some things...
+#  directories:
+#    - '$HOME/.m2/repository'
+#    - '$HOME/.sonar/cache'
+#    - '$HOME/.gradle'
+#    - '.gradle'
