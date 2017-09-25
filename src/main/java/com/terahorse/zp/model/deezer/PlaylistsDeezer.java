@@ -12,7 +12,6 @@ import java.util.List;
 public class PlaylistsDeezer {
 
     private List<PlaylistDeezer> data;
-    private Integer total;
 
     public List<PlaylistDeezer> getData() {
         return data;
