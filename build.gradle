@@ -8,7 +8,8 @@ plugins {
     id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
     id 'war'    // allows war creation
     id 'org.springframework.boot' version '1.5.6.RELEASE' // spring boot
-    id 'org.sonarqube' version "2.5"
+    id 'org.sonarqube' version "2.5" // allows sonarqube usage
+    id 'jacoco' // allows code coverage without IDEA
 }
 
 repositories {
