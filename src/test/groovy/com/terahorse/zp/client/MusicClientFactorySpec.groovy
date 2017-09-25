@@ -12,6 +12,7 @@ class MusicClientFactorySpec extends BaseUnitSpec {
     def "create() - deezer"() {
         expect:
         MusicClientFactory.create(MusicClientType.DEEZER).class == DeezerClient
+        1 == 2
     }
 
     def "create() - invalid"() {
