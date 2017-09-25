@@ -9,7 +9,7 @@ plugins {
     id 'war'    // allows war creation
     id 'org.springframework.boot' version '1.5.6.RELEASE' // spring boot
     id 'org.sonarqube' version "2.5" // allows sonarqube usage
-    id 'jacoco' // allows code coverage without IDEA
+    //id 'jacoco' // allows code coverage without IDEA
 }
 
 repositories {
