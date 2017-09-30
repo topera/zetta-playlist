@@ -12,6 +12,7 @@ import com.terahorse.zp.model.zp.Playlists;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class DeezerConverter {
 
@@ -35,7 +36,7 @@ public class DeezerConverter {
         Playlist playlist = new Playlist();
 
         playlist.setId(playlistDeezer.getId());
-        playlist.setMusicClientType(MusicClientType.DEEZER.toString().toLowerCase());
+        playlist.setMusicClientType(MusicClientType.DEEZER.toString().toLowerCase(Locale.ENGLISH));
         playlist.setTitle(playlistDeezer.getTitle());
         playlist.setImage(playlistDeezer.getPicture());
         playlist.setDescription(playlistDeezer.getDescription());

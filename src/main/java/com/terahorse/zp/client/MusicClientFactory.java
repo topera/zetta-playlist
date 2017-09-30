@@ -8,12 +8,9 @@ import com.terahorse.zp.exception.ZPNotSupportedException;
 
 import static com.terahorse.zp.client.MusicClientType.DEEZER;
 
-public abstract class MusicClientFactory {
+public interface MusicClientFactory {
 
-    private MusicClientFactory() {
-    }
-
-    public static MusicClient create(MusicClientType type){
+    static MusicClient create(MusicClientType type){
         if (type == DEEZER) {
             return new DeezerClient();
         }

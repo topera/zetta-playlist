@@ -20,3 +20,8 @@ test {
     // before run tests, we need to run war first, to have version.txt created
     dependsOn war
 }
+
+//jacocoTestReport {
+    // before generate report, first run all tests
+    //dependsOn test // TODO: if I enable this, I get same error that I seeing in travis
+//}
