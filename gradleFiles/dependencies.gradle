@@ -12,13 +12,11 @@ dependencies {
 
     // spock
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.12' // explicit dependency need by jacoco
 
     // spring boot test
     testCompile 'org.springframework.boot:spring-boot-starter-test:1.5.7.RELEASE'
 
     // this increases version of mockito from 1.10.19 to a newer
     testCompile 'org.mockito:mockito-core:2.10.0'
-
-    // fix jacoco bug
-    //testCompile 'org.jacoco:org.jacoco.agent:0.7.9'
 }

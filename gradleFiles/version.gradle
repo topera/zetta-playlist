@@ -21,7 +21,7 @@ test {
     dependsOn war
 }
 
-//jacocoTestReport {
+jacocoTestReport {
     // before generate report, first run all tests
-    //dependsOn test // TODO: if I enable this, I get same error that I seeing in travis
-//}
+    dependsOn test
+}
