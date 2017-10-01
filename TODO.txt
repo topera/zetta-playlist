@@ -1,10 +1,4 @@
 
-TODO
-    sonar cloud
-    jacoco
-ROADMAP
-    Add devtools as dependency
-
 TECH GUIDE
     * Tests
         * We should unit test ALL classes, except:
