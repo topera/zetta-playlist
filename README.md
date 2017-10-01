@@ -8,7 +8,7 @@ Branch: master
 | Item | Status |
 | --- | --- |
 | Build Status | [![Build Status](https://travis-ci.org/topera/zetta-playlist.svg?branch=master)](https://travis-ci.org/topera/zetta-playlist) |
-| Quality Gateway | https://sonarcloud.io/api/badges/gate?key=zetta-playlist | 
+| Quality Gateway | [![Build Status](https://sonarcloud.io/api/badges/gate?key=zetta-playlist)](https://sonarcloud.io/dashboard?id=zetta-playlist)  | 
 | Lines of Code | https://sonarcloud.io/api/badges/measure?metric=ncloc&key=zetta-playlist |
 | Complexity  by functions | https://sonarcloud.io/api/badges/measure?metric=function_complexity&key=zetta-playlist |
 | Coverage | https://sonarcloud.io/api/badges/measure?metric=coverage&key=zetta-playlist |
