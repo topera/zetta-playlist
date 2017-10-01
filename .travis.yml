@@ -1,4 +1,4 @@
-dist: trusty # only Ubuntu Trusty allows usage of Java 8 in Travis CI.
+dist: trusty # only Ubuntu Trusty allows usage of Java 8 in Travis CI server.
 language: java
 jdk:
   - oraclejdk8
