@@ -1,4 +1,20 @@
-dist: trusty # only Ubuntu Trusty allows usage of Java 8 in Travis CI
+dist: trusty # only Ubuntu Trusty allows usage of Java 8 in Travis CI.
 language: java
 jdk:
   - oraclejdk8
+script:
+  - ./gradlew sonarqube # we need to add this, otherwise will not work
+addons:
+  sonarcloud:
+    organization: "topera-github"
+    #token:
+      #secure: "token stored in travis-ci -> repo -> settings -> Environment variables -> SONAR_TOKEN = xxxxx"
+    branches:
+      - dev # dev is here because by default analyses only master branch
+      - master
+cache: # optional: reduce time, caching some things...
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'

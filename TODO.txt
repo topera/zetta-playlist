@@ -1,7 +1,13 @@
 
-IN PROGRESS
-DEV IMPROVEMENTS
-    Specify base path for API: "/api"
-APP IMPROVEMENTS
+TODO
+    sonar cloud
+    jacoco
 ROADMAP
     Add devtools as dependency
+
+TECH GUIDE
+    * Tests
+        * We should unit test ALL classes, except:
+            - Controllers: They are tested in integration tests.
+            - Model classes: we should not have logic in model classes
+            - Exceptions

@@ -1,13 +1,22 @@
+/*
+ * Copyright (c) 2017 - Terahorse
+ */
+
 dependencies {
+
     // spring boot: basic web configuration
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile 'org.springframework.boot:spring-boot-starter-web:1.5.7.RELEASE'
 
     // adjust war generation
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:1.5.7.RELEASE'
 
     // spock
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.12' // explicit dependency need by jacoco
 
     // spring boot test
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile 'org.springframework.boot:spring-boot-starter-test:1.5.7.RELEASE'
+
+    // this increases version of mockito from 1.10.19 to a newer
+    testCompile 'org.mockito:mockito-core:2.10.0'
 }
