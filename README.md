@@ -8,6 +8,7 @@ Branch: **master**
 
 | Item | Status |
 | --- | --- |
+| Ebert | [![Ebert](https://ebertapp.io/github/topera/zetta-playlist.svg)](https://ebertapp.io/github/topera/zetta-playlist) |
 | Build Status | [![Build Status](https://travis-ci.org/topera/zetta-playlist.svg?branch=master)](https://travis-ci.org/topera/zetta-playlist) |
 | Quality Gateway | [![Build Status](https://sonarcloud.io/api/badges/gate?key=zetta-playlist)](https://sonarcloud.io/dashboard?id=zetta-playlist)  | 
 | Lines of Code |	[![Build Status](https://sonarcloud.io/api/badges/measure?metric=ncloc&key=zetta-playlist)](https://sonarcloud.io/dashboard?id=zetta-playlist) |
