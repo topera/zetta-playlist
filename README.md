@@ -14,8 +14,8 @@ Website: http://zetta.terahorse.com
 
 
 Operations
-* Run all tests locally: $ gradle test
-* Run all tests in Travis CI (it's automatically configured to use Gradle 4.0.0) : $ ./gradlew test
+* Run all tests (if locally): $ gradle test
+* Run all tests (if in Travis CI) : $ ./gradlew test
 
 
 Tech Stack
