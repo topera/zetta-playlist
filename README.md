@@ -3,7 +3,6 @@ An application that allows you to manage your stream music playlists
 
 Website: http://zetta.terahorse.com
 
-| Item | Status |
 [![Build Status](https://travis-ci.org/topera/zetta-playlist.svg?branch=master)](https://travis-ci.org/topera/zetta-playlist)
 [![Build Status](https://sonarcloud.io/api/project_badges/measure?project=zetta-playlist&metric=bugs)](https://sonarcloud.io/project/issues?id=zetta-playlist&resolved=false&types=BUG)
 [![Build Status](https://sonarcloud.io/api/project_badges/measure?project=zetta-playlist&metric=vulnerabilities)](https://sonarcloud.io/project/issues?id=zetta-playlist&resolved=false&types=VULNERABILITY)

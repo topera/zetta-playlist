@@ -10,7 +10,7 @@ import org.junit.Test
 class IndexSpec extends BaseIntegrationSpec {
 
     @Test
-    def "read index"() {
+    def "read index "() {
         when: "read page"
         def body = readPage("/")
 
